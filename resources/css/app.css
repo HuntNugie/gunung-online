@@ -1,4 +1,26 @@
-@import 'tailwindcss';
+  /* <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet"> --}} */
+/* Bootstrap */
+@import '../vendor/bootstrap/css/bootstrap.min.css';
+
+/* Bootstrap Icons */
+@import '../vendor/bootstrap-icons/bootstrap-icons.css';
+
+/* AOS Animation */
+@import '../vendor/aos/aos.css';
+
+/* Swiper */
+@import '../vendor/swiper/swiper-bundle.min.css';
+
+/* Glightbox */
+@import '../vendor/glightbox/css/glightbox.min.css';
+
 
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../storage/framework/views/*.php';
