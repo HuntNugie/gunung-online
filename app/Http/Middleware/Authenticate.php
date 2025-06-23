@@ -17,7 +17,6 @@ class Authenticate extends Middleware
             if ($request->is('admin/*')) {
                 return route('admin.login');
             }
-
             // Default redirect untuk user biasa
             return route('login');
         }

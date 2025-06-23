@@ -16,8 +16,9 @@ class LoginController extends Controller
             "email" => 'required | email | exists:admins,email',
             'password' => 'required',
         ]);
+        $remember = $request->filled("remember");
         $credential = $request->only("email","password");
-        if(Auth::guard("admin")->attempt($credential)){
+        if(Auth::guard("admin")->attempt($credential,$remember)){
             return redirect()->intended(route("dashboard"));
         }
         return redirect()->back()->withErrors(["gagal" => "Gagal login"]);
